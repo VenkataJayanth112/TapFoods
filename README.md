@@ -1,1 +1,1 @@
-Project using JAVA,JDBC,Servlets,JSP,HTML,CSS,MySQL
+Project based on JAVA,JDBC,Servlets,JSP,HTML,CSS,MySQL
