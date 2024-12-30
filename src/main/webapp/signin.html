@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sign-In</title>
+    <style type="text/css">
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            width: 350px;
+            max-width: 100%;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #00c6ff;
+        }
+        input {
+            background: #f1f1f1;
+            border: none;
+            padding: 10px 15px;
+            margin: 10px 0;
+            width: calc(100% - 30px);
+            border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+        input:focus {
+            background: #e0e0e0;
+            outline: none;
+        }
+        button {
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+            background: #00c6ff;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            margin-top: 20px;
+            width: calc(100% - 20px);
+            box-sizing: border-box;
+        }
+        button:hover {
+            background: #0072ff;
+        }
+        table {
+            width: 100%;
+        }
+        td {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sign In</h1>
+        <form action="signin.jsp">
+            <table>
+                <tr>
+                    <td><label>Username:</label></td>
+                    <td><input type="text" name="username" placeholder="Enter your username"><br></td>
+                </tr>
+                <tr>
+                    <td><label>Password:</label></td>
+                    <td><input type="password" name="password" placeholder="Enter your password"><br></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:center;"><button type="submit">Submit</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
